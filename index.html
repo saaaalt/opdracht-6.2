@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>opdracht 6.2</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <form>
+            <label for="voornaam">Voornaam: </label><br>
+            <input type="text" pattern="^[a-zA-Z]+$" id="voornaam"><br>
+            <label for="achternaam">Achternaam: </label><br>
+            <input type="text" pattern="^[a-zA-Z]+$" id="achternaam"><br>
+            <p>Geslacht: </p>
+            <input type="radio" id="man" checked>
+            <label for="man">Man</label>
+            <input type="radio" id="vrouw">
+            <label for="vrouw">Vrouw</label><br>
+        </form>
+
+        <form>
+            <label for="adres">Straat en huisnummer: </label><br>
+            <input type="text" id="adres"><br>
+            <label for="postcode">Postcode: </label><br>
+            <input type="text" id="postcode"><br>
+            <label for="stad">Stad: </label><br>
+            <input type="text" id="stad"><br>
+            <label for="land">Land: </label><br>
+            <input type="text" id="land"><br>
+        </form>
+
+        <form>
+            <label for="bsn-nummer">BSN-nummer:</label><br>
+            <input type="number" maxlength="9" id="bsn-nummer"><br>
+            <label for="vakantielanden">Kies uit een van de landen: </label><br>
+            <select name="vakantielanden" id="vakantielanden">
+                <option value="select" selected>Kies een land</option>
+                <option value="guatamala">Guatamala</option>
+                <option value="brazilië">Brazilië</option>
+                <option value="duitsland">Duitsland</option>
+                <option value="indonesië">Indonesië</option>
+            </select><br>
+            <label for="vertrek">Vertrekdatum:</label><br>
+            <input type="date" id="vertrek" min="02/10/2023"><br>
+            <label for="terugkomst">Terugkomstdatum:</label><br>
+            <input type="date" id="terugkomst"><br> 
+            <label for="reisgenoten">Aantal reisgenoten:</label><br>
+            <input type="number" min="1" max="4"><br>
+        </form>
+                
+        <form>
+            <label for="email">Email: </label><br>
+            <input type="text" id="email"><br>
+            <label for="date">Geboortedatum: </label><br>
+            <input type="date" id="date"><br>
+            <label for="wachtwoord">Wachtwoord:</label><br>
+            <input type="password" id="wachtwoord"><br>
+        </form>
+
+        <input type="submit" value="Boek nu!"><br>
+
+    </body>
+</html>
